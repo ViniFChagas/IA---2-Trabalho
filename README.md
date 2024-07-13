@@ -27,7 +27,7 @@ P(V | R, Flw) = P(V | R)
 Além disso temos a seguinte tabela comparando as influências que as variáveis V, B e K têm em P(Li):
 
 
-![tabela variáveis](https://github.com/user-attachments/assets/a0ba188b-05b5-4384-bb28-4a00f2c9eae2)
+![tabela P(Li)](https://github.com/user-attachments/assets/c82ebf07-78b6-41f3-a828-678754937e00)
 
 
 Foi feito também uma rede causalidade entre as variáveis Str, Flw, R, V, B, K e Li:

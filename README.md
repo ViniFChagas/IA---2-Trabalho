@@ -1,7 +1,9 @@
 # IA - 2º Trabalho - Raciocínio Probabilistico
 
 Docente: Edjard Mota
+
 Discente: Vinicius Chagas (22050485)
+
 
 Trabalho avaliativo da disciplina de Inteligência Artificial, ministrada pelo professor Edjard Mota.
 
@@ -21,7 +23,9 @@ As seguintes variáveis são independentes aos pares: Str, Flw, B, K. Além diss
 
 
 P(Li | V, R) = P(Li | V)
+
 P(V | R, Str) = P(V | R)
+
 P(V | R, Flw) = P(V | R)
 
 

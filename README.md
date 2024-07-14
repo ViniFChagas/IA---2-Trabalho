@@ -8,7 +8,7 @@ Discente: Vinicius Chagas (22050485)
 Trabalho avaliativo da disciplina de Inteligência Artificial, ministrada pelo professor Edjard Mota.
 
 
-# Introdução
+## Introdução
 
 As redes bayesianas são ferramentas poderosas para modelar e raciocinar sobre sistemas complexos com variáveis incertas. Ao representar as relações entre os diversos componentes do sistema como uma rede de nós interconectados, as redes bayesianas podem calcular de forma eficiente a probabilidade de diferentes resultados, dadas as evidências observadas.
 
@@ -42,13 +42,15 @@ Foi feito também uma rede causalidade entre as variáveis Str, Flw, R, V, B, K 
 
 
 
-# Objetivo
+## Objetivo
 
 
-Com base na rede causalidade criada, será implementado o problema em questão em ProLog e também será mostrado a solução para P(V | Str = snow_covered).
+Com base na rede causalidade criada, será implementado o problema em questão em ProLog e também será mostrado a solução para:
+
+-     P(V | Str = snow_covered).
 
 
-# Resultados
+## Resultados
 
 
 Ao executar o código, o mecanismo considerará os relacionamentos e probabilidades definidos para calcular a probabilidade condicional. A saída será a probabilidade de voltagem ser alta (verdadeira) ou baixa (falsa) dada uma rua coberta de neve.
@@ -71,7 +73,7 @@ Em resumo, o código ProbLog fornecido permite calcular a probabilidade desejada
 
 
 
-# Referências
+## Referências
  
 https://dtai.cs.kuleuven.be/problog/tutorial/basic/02_bayes.html
 

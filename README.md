@@ -59,14 +59,15 @@ Ao executar o código, o mecanismo considerará os relacionamentos e probabilida
 Por exemplo, a saída pode ser:
 
 - Entrada:
-'''
+```
 ?- query(p(voltage(V) | street_condition(snow_covered))).
-'''
+```
 
 - Saída:
--     p(voltage(true) | street_condition(snow_covered)) = 0.04   % (0.95 * 0.04)
--     p(voltage(false) | street_condition(snow_covered)) = 0.96  % (0.95 * 0.96 + 0.05 * 1)
-
+```  
+p(voltage(true) | street_condition(snow_covered)) = 0.04   % (0.95 * 0.04)
+p(voltage(false) | street_condition(snow_covered)) = 0.96  % (0.95 * 0.96 + 0.05 * 1)
+```
 
 Isso mostra que a probabilidade de voltagem alta (V = true) dada uma rua coberta de neve é 0,04, enquanto a probabilidade de voltagem baixa (V = false) é 0,96.
 

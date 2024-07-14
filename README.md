@@ -51,33 +51,17 @@ Com base na rede causalidade criada, será implementado o problema em questão e
 # Resultados
 
 
-O código ProbLog fornecido permite calcular "p(voltage(V) | street_condition(snow_covered))", que é a probabilidade de voltagem (V) dada uma condição de rua coberta de neve (Str). Veja como funciona:
-
-
-- Variáveis Independentes: O código define a condição da rua, desgaste do volante, condição da lâmpada e condição do cabo como variáveis independentes. Isso significa que suas probabilidades não são influenciadas por outras variáveis na rede.
-
-
-- Probabilidades Condicionais: O código usa regras para definir probabilidades condicionais. Por exemplo:
-
-p(light_is_on(true)) :- voltage(true). - Isso afirma que a luz está acesa (Li) se a voltagem estiver alta (V), independentemente do escorregamento do dínamo (R).
-
-p(voltage(true)) :- dynamo_slipping(true). - Isso afirma que a voltagem é alta (V) se o dínamo estiver escorregando (R), independentemente da condição da rua (Str) ou do desgaste do volante (Flw).
-
-p(dynamo_slipping(true)) = 0.95 :- street_condition(snow_covered), flywheel_worn_out(true). - Isso define a probabilidade de escorregamento do dínamo (R) ser 0,95 quando a rua está coberta de neve e o volante está desgastado.
-
-
-- Consulta: A linha final query(p(voltage(V) | street_condition(snow_covered))) pede ao programa para calcular a probabilidade de voltagem (V) dada uma condição de rua coberta de neve (Str).
-
-
 Ao executar o código, o mecanismo considerará os relacionamentos e probabilidades definidos para calcular a probabilidade condicional. A saída será a probabilidade de voltagem ser alta (verdadeira) ou baixa (falsa) dada uma rua coberta de neve.
 
 
 Por exemplo, a saída pode ser:
 
-- Entrada: ?- query(p(voltage(V) | street_condition(snow_covered))).
+- Entrada:
+-     ?- query(p(voltage(V) | street_condition(snow_covered))).
 
-- Saída: p(voltage(true) | street_condition(snow_covered)) = 0.04   % (0.95 * 0.04)
--        p(voltage(false) | street_condition(snow_covered)) = 0.96  % (0.95 * 0.96 + 0.05 * 1)
+- Saída:
+-     p(voltage(true) | street_condition(snow_covered)) = 0.04   % (0.95 * 0.04)
+-     p(voltage(false) | street_condition(snow_covered)) = 0.96  % (0.95 * 0.96 + 0.05 * 1)
 
 
 Isso mostra que a probabilidade de voltagem alta (V = true) dada uma rua coberta de neve é 0,04, enquanto a probabilidade de voltagem baixa (V = false) é 0,96.

@@ -77,6 +77,6 @@ Em resumo, o código ProbLog fornecido permite calcular a probabilidade desejada
 
 ## Referências
  
-https://dtai.cs.kuleuven.be/problog/tutorial/basic/02_bayes.html
+> https://dtai.cs.kuleuven.be/problog/tutorial/basic/02_bayes.html
 
 

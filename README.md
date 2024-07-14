@@ -47,7 +47,7 @@ Foi feito também uma rede causalidade entre as variáveis Str, Flw, R, V, B, K 
 
 Com base na rede causalidade criada, será implementado o problema em questão em ProLog e também será mostrado a solução para:
 
--     P(V | Str = snow_covered).
+P(V | Str = snow_covered)
 
 
 ## Resultados
@@ -59,7 +59,9 @@ Ao executar o código, o mecanismo considerará os relacionamentos e probabilida
 Por exemplo, a saída pode ser:
 
 - Entrada:
--     ?- query(p(voltage(V) | street_condition(snow_covered))).
+'''
+?- query(p(voltage(V) | street_condition(snow_covered))).
+'''
 
 - Saída:
 -     p(voltage(true) | street_condition(snow_covered)) = 0.04   % (0.95 * 0.04)

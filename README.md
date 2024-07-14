@@ -8,7 +8,7 @@ Discente: Vinicius Chagas (22050485)
 Trabalho avaliativo da disciplina de Inteligência Artificial, ministrada pelo professor Edjard Mota.
 
 
-## Introdução
+# Introdução
 
 As redes bayesianas são ferramentas poderosas para modelar e raciocinar sobre sistemas complexos com variáveis incertas. Ao representar as relações entre os diversos componentes do sistema como uma rede de nós interconectados, as redes bayesianas podem calcular de forma eficiente a probabilidade de diferentes resultados, dadas as evidências observadas.
 
@@ -42,13 +42,13 @@ Foi feito também uma rede causalidade entre as variáveis Str, Flw, R, V, B, K 
 
 
 
-## Objetivo
+# Objetivo
 
 
 Com base na rede causalidade criada, será implementado o problema em questão em ProLog e também será mostrado a solução para P(V | Str = snow_covered).
 
 
-## Resultados
+# Resultados
 
 
 O código ProbLog fornecido permite calcular "p(voltage(V) | street_condition(snow_covered))", que é a probabilidade de voltagem (V) dada uma condição de rua coberta de neve (Str). Veja como funciona:
@@ -74,10 +74,10 @@ Ao executar o código, o mecanismo considerará os relacionamentos e probabilida
 
 Por exemplo, a saída pode ser:
 
-?- query(p(voltage(V) | street_condition(snow_covered))).
+- Entrada: ?- query(p(voltage(V) | street_condition(snow_covered))).
 
-p(voltage(true) | street_condition(snow_covered)) = 0.04   % (0.95 * 0.04)
-p(voltage(false) | street_condition(snow_covered)) = 0.96  % (0.95 * 0.96 + 0.05 * 1)
+- Saída: p(voltage(true) | street_condition(snow_covered)) = 0.04   % (0.95 * 0.04)
+-        p(voltage(false) | street_condition(snow_covered)) = 0.96  % (0.95 * 0.96 + 0.05 * 1)
 
 
 Isso mostra que a probabilidade de voltagem alta (V = true) dada uma rua coberta de neve é 0,04, enquanto a probabilidade de voltagem baixa (V = false) é 0,96.
@@ -87,7 +87,7 @@ Em resumo, o código ProbLog fornecido permite calcular a probabilidade desejada
 
 
 
-## Referências
+# Referências
  
 https://dtai.cs.kuleuven.be/problog/tutorial/basic/02_bayes.html
 
